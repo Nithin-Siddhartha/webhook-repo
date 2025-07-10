@@ -43,6 +43,7 @@ def webhook():
 
             if action == "opened":
                 event_data = {
+                    "request_id": str(uuid.uuid4()),
                     "type": "pull_request",
                     "author": author,
                     "from_branch": from_branch,
@@ -54,6 +55,7 @@ def webhook():
 
             elif action == "closed" and merged:
                 event_data = {
+                    "request_id": str(uuid.uuid4()),
                     "type": "pull_request",
                     "author": author,
                     "from_branch": from_branch,
