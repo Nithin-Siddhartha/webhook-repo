@@ -13,6 +13,3 @@ This repo contains a Flask-based webhook server that listens for GitHub events a
 - MongoDB
 - HTML + Bootstrap + JavaScript (AJAX)
 - Ngrok for exposing local server
-
-### Related Repository
-[action-repo](https://github.com/Nithin-Siddhartha/action-repo) — Contains dummy repo to trigger GitHub webhook events.
