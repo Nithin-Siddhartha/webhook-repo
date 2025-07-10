@@ -1,4 +1,3 @@
-# webhook-repo
 # Webhook Listener & Dashboard
 
 This repo contains a Flask-based webhook server that listens for GitHub events and stores them in MongoDB. It also includes a UI dashboard to view webhook activities.
