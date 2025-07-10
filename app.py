@@ -1,3 +1,4 @@
+import uuid
 from flask import Flask, request, jsonify
 from pymongo import MongoClient
 from flask import render_template_string
@@ -24,6 +25,7 @@ def webhook():
         if event_type == "push":
             to_branch = payload.get("ref", "").split("/")[-1]
             event_data = {
+                "request_id": str(uuid.uuid4()),
                 "type": "push",
                 "author": author,
                 "to_branch": to_branch,
